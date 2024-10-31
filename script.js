@@ -11,7 +11,7 @@
         const targetContainer = event.currentTarget;
 
        if(targetContainer !== draggedImage.parentElement){
-        const targetImage = targetContainer.querySelector('img');
+        const targetImage = targetContainer.querySelector(img);
 
         const tempSrc = targetImage.src;
         targetImage.src = draggedImage.src;
