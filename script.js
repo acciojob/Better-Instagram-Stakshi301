@@ -1,4 +1,4 @@
-let draggedImage = null;
+ let draggedImage = null;
     function allowDrop(event){
         event.preventDefault();
     }
@@ -11,10 +11,10 @@ let draggedImage = null;
         const targetContainer = event.currentTarget;
 
        if(targetContainer !== draggedImage.parentElement){
-        const targetImage = targetContainer.querySelector('background-image');
+        const targetImage = targetContainer.querySelector('img');
 
-        const tempSrc = targetImage.url;
-        targetImage.url = draggedImage.url;
-        draggedImage.url = tempSrc;
+        const tempSrc = targetImage.src;
+        targetImage.src = draggedImage.src;
+        draggedImage.src = tempSrc;
        }
     }
